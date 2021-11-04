@@ -3,17 +3,18 @@
 	<head>
 		<title>Future Forniture</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./Css/one_page_website.css">
 	</head>
 	
 	<body>
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery" id="link"><li>GALLERY</li></a>
-					<a href="#videos" id="link"><li>VIDEOS</li></a>
-					<a href="#contact" id="link"><li>CONTACT</li></a>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home" ><li>HOME</li></a>
+					<a href="#gallery" ><li>GALLERY</li></a>
+					<a href="#videos" "><li>VIDEOS</li></a>
+					<a href="#contact" "><li>CONTACT</li></a>
 				</ul>
 			</div>
 		</div>
@@ -21,93 +22,85 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div style="text-align:center";>
-				<h1 > Future Forniture </h1>
-				<p>
-					<img align="middle" src="./Images/logo.jpg" alt="logo" width="200" height="200">
-					<br>Live your future today! 
-				</p>
-				<p>				
-					Future Forniture is a familiar company established in 1990.<br>
-					Our purpose is to give to our clients the experience of comfort with a futurism design vision! 
-				</p>					
+			<div class="container">
+				<div class="text-center">
+					<h1 class="head-main" > Future Forniture </h1>
+					<p>
+						<img align="middle" src="./Images/logo.jpg" alt="logo" width="200" height="200">
+						<br>Live your future today! 
+						</p>
+					<p>				
+						Future Forniture is a familiar company established in 1990.<br>
+						Our purpose is to give to our clients the experience of comfort with a futurism design vision! 
+					</p>					
+				</div>
 			</div>
-			
 		</div>
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
 		<section>
 			<div id="gallery">
-				<h1>GALLERY</h1>
-				<div>
+				<div class="container">
+					<h1>GALLERY</h1>
+					<div class="flex-container">
 									
-					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./Images/bedroom.jpg" alt="Bedroom" width="640" height="480">
-							<div>
-								<p><em>Bedroom</em></p>
+						<!-- PHOTO CONTAINER 1 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/bedroom.jpg" alt="Bedroom" width="640" height="480">
+								
 							</div>
-						</div>
-					</div>				
-					<!-- END PHOTO CONTAINER 1 -->
+						</div>				
+						<!-- END PHOTO CONTAINER 1 -->
 					
-					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./Images/livingroom.jpg" alt="Living room" width="640" height="480">
-							<div>								
-								<p><em>Living room</em></p>
+						<!-- PHOTO CONTAINER 2 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/livingroom.jpg" alt="Living room" width="640" height="480">
+								
 							</div>
-						</div>
-					</div>				
-					<!-- END PHOTO CONTAINER 2 -->
+						</div>				
+						<!-- END PHOTO CONTAINER 2 -->
 					
-					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./Images/kitchen.jpg" alt="Kitchen" width="640" height="480">
-							<div>								
-								<p><em>Kitchen</em></p>
+						<!-- PHOTO CONTAINER 3 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/kitchen.jpg" alt="Kitchen" width="640" height="480">
+								
 							</div>
-						</div>
-					</div>				
-					<!-- END PHOTO CONTAINER 3 -->
-					
-					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./Images/restroom.jpg" alt="Restroom" width="640" height="480">
-							<div>
-								<p><em>Restroom</em></p>
+						</div>				
+						<!-- END PHOTO CONTAINER 3 -->
+						
+						<!-- PHOTO CONTAINER 4 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/restroom.jpg" alt="Restroom" width="640" height="480">
+								<div>
+									<p><em>Restroom</em></p>
+								</div>
 							</div>
-						</div>
-					</div>				
-					<!-- END PHOTO CONTAINER 4 -->
+						</div>				
+						<!-- END PHOTO CONTAINER 4 -->
 					
-					<!-- PHOTO CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./Images/garden.jpg" alt="Garden" width="640" height="480">
-							<div>
-								<p><em>Garden</em></p>
+						<!-- PHOTO CONTAINER 5 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/garden.jpg" alt="Garden" width="640" height="480">
+								
 							</div>
-						</div>
-					</div>				
-					<!-- END PHOTO CONTAINER 5 -->
-					
-					<!-- PHOTO CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./Images/others.jpg" alt="Others" width="640" height="480">
-							<div>
-								<p><em>Moore</em></p>
+						</div>				
+						<!-- END PHOTO CONTAINER 5 -->
+						
+						<!-- PHOTO CONTAINER 6 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/others.jpg" alt="Others" width="640" height="480">
+								
 							</div>
-						</div>
-					</div>				
-					<!-- END PHOTO CONTAINER 6 -->
-					
+						</div>				
+						<!-- END PHOTO CONTAINER 6 -->
+					</div>
 					
 				</div>
 			</div>
@@ -117,25 +110,29 @@
 		<!-- VIDEOS -->
 		<section>
 			<div id="videos">
-				<h1>Videos</h1>
-				<div>					
-					<iframe width="640" height="480" controls src="https://www.youtube.com/embed/6Ck20OW9h7k" title="Modular Chair" allowfullscreen></iframe>					
-				</div>
-				<div>
-					<iframe width="640" height="480" controls src="https://www.youtube.com/embed/FHP9TuVHUFg" title="Smart Solutions" allowfullscreen></iframe>									
+				<div class="container">
+					<h1>Videos</h1>
+					<div class="flex-container">
+						<div>					
+							<iframe width="640" height="480" controls src="https://www.youtube.com/embed/6Ck20OW9h7k" title="Modular Chair" allowfullscreen></iframe>					
+						</div>
+						<div>
+							<iframe width="640" height="480" controls src="https://www.youtube.com/embed/FHP9TuVHUFg" title="Smart Solutions" allowfullscreen></iframe>									
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<!-- END GALLERY -->
+		<!-- END VIDEOS -->
 		
 		
 
 		<!-- Contact -->
 		<section>
 			<div id="contact">
-				<div style="text-align:center"; >
+				<div class="container">
 					<h1>Contact</h1>
-					<div>
+					<div class="reservation">
 						<h2>Don't think it to much</h2>
 						<h3>Contact us for more information!</h3>
 						
@@ -164,7 +161,7 @@
 		
 		<!-- FOOTER -->
 		<footer>
-			<div style="text-align:right";>
+			<div>
 				www.futureforniture.com&nbsp;|&nbsp;&copy;2021
 			</div>			
 		</footer>
