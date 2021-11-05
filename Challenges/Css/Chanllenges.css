@@ -1,0 +1,92 @@
+/*-------------------------------------------------------
+    CHALLENGES
+---------------------------------------------------------*/
+
+.imagen
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: opacity(50%);
+    border-radius: 5%;
+}
+.centrado
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+table
+{
+    border: 1px solid black;
+}
+
+th, td 
+{
+    padding: 15px;
+}
+
+th
+{
+    background-color: lightblue;
+}
+.container-img
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar
+{
+    overflow: hidden;
+    background-color: rgb(8, 233, 222);
+    
+}
+
+.navbar a 
+{
+    float: left;
+    display: block;
+    color: #150c91;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.navbar a:hover 
+{
+    background: rgb(3, 32, 192);
+    color: rgb(255, 255, 255);
+}
+
+.column 
+{
+    float: left;
+    height: 100px;
+    width: 50%;
+    color: darkred;
+    background-color: lightyellow;
+}
+  
+  /* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.seven:hover
+{
+    color: green;
+    cursor: pointer;
+}
