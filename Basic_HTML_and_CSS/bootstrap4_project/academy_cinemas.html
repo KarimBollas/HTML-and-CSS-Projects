@@ -84,7 +84,7 @@
             <h2 class="my-5">Showtimes:</h2>
             <div  class="card-group ">
                 <div class="card">
-                    <img src="./Img/movie1.jpg" class="card-img-top" alt="movie1">
+                    <img src="./Img/movie1.jpg" class="card-img-top" alt="movie1" data-toggle="tooltip" data-placement="top" title="Best Classic Ever...">
                     <div class="card-block">
                         <h4 class="card-title">Citizen Kane</h4>
                         <p class="card-text">In a mansion called Xanadu, part of a vast palatial estate in Florida, the elderly Charles Foster Kane is on his deathbed. Holding a snow globe, he utters a word, "Rosebud", and dies.</p>
@@ -98,7 +98,7 @@
                 </div>
                     
                 <div class="card">                            
-                    <img src="./Img/movie2.jpg" class="card-img-top" alt="movie1">
+                    <img src="./Img/movie2.jpg" class="card-img-top" alt="movie2" data-toggle="tooltip" data-placement="top" title="Westerns always are up to day ...">
                     <div class="card-block">
                         <h4 class="card-title">The searchers</h4>
                         <p class="card-text">In 1868, Ethan Edwards returns after an eight-year absence to the home of his brother Aaron in the wilderness of West Texas. </p>
@@ -112,7 +112,7 @@
                 </div>
                     
                 <div class="card">
-                    <img src="./Img/movie3.jpg" class="card-img-top" alt="movie1">
+                    <img src="./Img/movie3.jpg" class="card-img-top" alt="movie3" data-toggle="tooltip" data-placement="top" title="Only this weekend...">
                         <div class="card-block">
                             <h4 class="card-title">Casablanca</h4>
                             <p class="card-text">A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.</p>
@@ -127,6 +127,19 @@
             </div>    
         </div>
         <!--End Showtimes -->
+
+        <!-- Jumbotron BOOTSTRAP AND JQUERY VIDEO-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;"> Movie Deals</h1>
+                <p class="lead">Check our monthly deals...</p>
+                <!--Movie deals-->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals</button>
+                <!--Movie deals-->                
+            </div>
+        </div>
+        <!--Jumbotron heading-->
+
         <!--Deals-->
         <div id="deals" class="text-center">
             <form>
@@ -134,10 +147,59 @@
                 <div class="form-group">     
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">                  
                 </div>                
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals">
+                    Sign up!
+                  </button>
             </form>
         </div>
         <!--end Deals-->
+
+        <!--form modal-->
+        <div class="modal fade" id="register" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Register to receive modal deals...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <fieldset class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name...">                                  
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">                                  
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email...">                                  
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password...">                                  
+                            </fieldset>
+                        </form>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--end form modal-->
+
+
+
+
+
+        <!-- Footer -->
         <div class="container my-5">
             <ul class="nav nav-line">
                 <li class="nav-item">
@@ -154,6 +216,7 @@
                 </li>                    
             </ul>
         </div>
+        <!-- End of Footer -->
         
     </div>
 
@@ -162,5 +225,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+ 
+    <script>
+        $('.popover-dismiss').popover
+            ({
+                trigger: 'focus'
+            })
+
+
+        // Add TOP tooltips component BOOTSTRAP SUBMISSION ASSIGNMENT
+        //it is required to annd data-toggle="tooltip" data-placement="top" title="Tooltip on top" 
+        // hover mouse over pictures to see tooltip
+        $(function () 
+        {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</body>
 </html>
